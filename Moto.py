@@ -14,12 +14,11 @@ cola.encolar(Moto("Oscar Adrian Bautista","20142020213","ABC458"))
 cola.encolar(Moto("Andres Felipe Pachon","20142020212","BHS458"))
 cola.encolar(Moto("Brayan Alejandro Gomez","2015101025","JKC589"))
 
-print(cola.tamano())
-print("\n")
-print("----------------------------------")
+print(cola.tamano(),"\n")
+
 while cola.es_vacia() == False:
-    Moto = cola.desencolar()
-    print(cola.tamano(),Moto.nombre)
-    print("Codigo",Moto.codigo)
-    print("Placa",Moto.placa)
+    moto = cola.desencolar()
+    print(cola.tamano(),moto.nombre)
+    print("Codigo: ",moto.codigo)
+    print("Placa: ",moto.placa)
     print("\n")
